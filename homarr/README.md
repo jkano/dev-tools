@@ -40,3 +40,14 @@ Simple and lightweight homepage for your server, that helps you easily access al
 4. Click on `Deploy the stack`
 5. Open `http://<your-ip-or-domain>`
 6. If you didn't paste the `default.json` file in configs folder, you can manually add and modify your applications using the UI
+
+> Note: Once you finish with the configuration you can remove the Settings and Add Service button by editing the configuration json file.
+
+To do this, change the line:
+```
+"customCSS": ".mantine-prtq9m {\ndisplay: flex;\n}\n"
+```
+to
+```
+"customCSS": ".mantine-prtq9m {\ndisplay: none;\n}\n"
+```
