@@ -33,7 +33,7 @@ Install docker on Ubuntu:
   sudo apt-get update
   ```
 - ```
-  sudo apt-get install docker-ce docker-ce-cli containerd.iodocker-compose-plugin docker-compose
+  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin docker-compose
   ```
 - ```
   sudo groupadd docker
