@@ -9,6 +9,6 @@ services:
     restart: unless-stopped
     volumes:
       - /home/jose/Documents/homarr/configs:/app/data/configs
-      - /home/jose/Documents/homarr/configs:/app/public/icons
+      - /home/jose/Documents/homarr/icons:/app/public/icons
     ports:
       - '80:7575'
