@@ -84,4 +84,4 @@ Portainer is the tool used to manage your containers and install/update/remove t
 - [Gitea](gitea/README.md)
 - [Mattermost](mattermost/README.md)
 - [Taiga](taiga/README.md)
-- [Homerr](homerr/README.md)
+- [Homarr](homarr/README.md)
