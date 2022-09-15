@@ -11,6 +11,13 @@ services:
     environment:
       - USER_UID=1000
       - USER_GID=1000
+      - GITEA__mailer__ENABLED=true
+      - GITEA__mailer__HOST=smtp.gmail.com:465
+      - GITEA__mailer__FROM=your@gmail.com
+      - GITEA__mailer__USER=your@gmail.com
+      - GITEA__mailer__PASSWD="password"
+      - GITEA__mailer__MAILER_TYPE=smtp
+      - GITEA__mailer__IS_TLS_ENABLED=true
     restart: always
     networks:
       - gitea
