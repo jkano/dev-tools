@@ -12,15 +12,14 @@ x-environment:
   TAIGA_SITES_SCHEME: "http"
   TAIGA_SITES_DOMAIN: "192.168.1.32:9003"
   TAIGA_SUBPATH: "" # "" or "/subpath"
-  # Email settings. Uncomment following lines and configure your SMTP server
-  # EMAIL_BACKEND: "django.core.mail.backends.smtp.EmailBackend"
-  # DEFAULT_FROM_EMAIL: "no-reply@example.com"
-  # EMAIL_USE_TLS: "False"
-  # EMAIL_USE_SSL: "False"
-  # EMAIL_HOST: "smtp.host.example.com"
-  # EMAIL_PORT: 587
-  # EMAIL_HOST_USER: "user"
-  # EMAIL_HOST_PASSWORD: "password"
+  # Gmail settings. Uncomment following lines and configure your SMTP server
+  EMAIL_BACKEND: "django.core.mail.backends.smtp.EmailBackend"
+  #DEFAULT_FROM_EMAIL: "no-reply@example.com"
+  EMAIL_USE_TLS: "True"
+  EMAIL_HOST: "smtp.gmail.com"
+  EMAIL_PORT: 587
+  EMAIL_HOST_USER: "your@gmail.com"
+  EMAIL_HOST_PASSWORD: "password" ## If you have 2 factor auth enabled, you have to create an app password
   # Rabbitmq settings
   # Should be the same as in taiga-async-rabbitmq and taiga-events-rabbitmq
   RABBITMQ_USER: taiga
